@@ -1,0 +1,39 @@
+<!--
+pattern = "regex"
+basics:
+pattern="^[A-Z]{2,15}$"
+^ - start of regex
+$ - end of regex
+[] charecters includes
+[0-9] - \d - 0-9
+[a-z] [A-Z,a-z]
+{} range
+{7} exactly 7 character
+{3,10}  {2, }
+min,max  min,infinity
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<body>
+    <h1>Form validation using regex</h1>
+    <form action="https://www.kodenest.com">
+        <lable for="name">Name: </lable>
+        <input type="text" id="name" name="name" pattern="^[A-Z]{1}[a-z]{1-49}$">
+
+        <lable for="number">PhoneNumber: </lable>
+        <input type="number" id="number" name="phnumber" pattern="^+91[6-9]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}$">
+
+        <lable for="password">Password: </lable>
+        <input type="password" id="password" name="password" pattern="^[A-Z]{1}[a-z]{1-49}">
+
+    </form>
+    
+</body>
+</html>

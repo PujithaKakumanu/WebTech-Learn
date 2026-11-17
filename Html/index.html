@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quick Revision</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f6ff;
+            color: #26324a;
+            line-height: 1.6;
+        }
+
+        .top {
+            background-color: #22264f;
+            color: white;
+            padding: 30px 8%;
+        }
+
+        .top h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .top span {
+            color: #78f0d2;
+        }
+
+        .nav {
+            background-color: white;
+            padding: 15px 8%;
+            border-bottom: 1px solid #dce3f5;
+        }
+
+        .nav a {
+            color: #5147c8;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .nav a:hover {
+            color: #e45d91;
+            text-decoration: underline;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 18px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #e0e6f5;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            color: #5147c8;
+            border-bottom: 2px solid #e8e7ff;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #168a7a;
+        }
+
+        .tag {
+            color: #d74782;
+            background-color: #fff0f6;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #171b2f;
+            color: white;
+            padding: 18px;
+            border-radius: 9px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+        .tip {
+            background-color: #e8fbf5;
+            border-left: 5px solid #21b89a;
+            padding: 12px;
+        }
+
+        .two {
+            background-color: #f5f4ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #22264f;
+            color: white;
+            padding: 20px;
+        }
+
+        .small-note {
+            color: #66728d;
+            font-size: 14px;
+        }
+
+        img {
+            max-width: 250px;
+            height: 250px;
+        }
+
+        @media (max-width: 600px) {
+            .top h1 {
+                font-size: 27px;
+            }
+
+            .nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>HTML <span>Quick Revision</span></h1>
+        <p>Learn the tags. Understand the concepts. Revise quickly!</p>
+    </div>
+
+    <div class="nav">
+        <a href="#basics">Basics</a>
+        <a href="#structure">Structure</a>
+        <a href="#text">Text Tags</a>
+        <a href="#attributes">Attributes</a>
+        <a href="#links">Links</a>
+        <a href="#media">Media</a>
+        <a href="#revision">Quick Sheet</a>
+    </div>
+
+    <div class="page">
+
+        <div class="card" id="basics">
+            <h2>01. Introduction to HTML</h2>
+
+            <p>
+                <b>HTML</b> stands for
+                <b>HyperText Markup Language</b>.
+                It defines the structure of a webpage.
+            </p>
+
+            <div class="two">
+                <b>Remember:</b><br>
+                <span class="tag">HTML</span> = Structure<br>
+                <span class="tag">CSS</span> = Appearance<br>
+                <span class="tag">JavaScript</span> = Interaction
+            </div>
+
+            <h3>History of HTML</h3>
+
+            <p>
+                Tim Berners-Lee developed the World Wide Web.
+                The first HTML version appeared in 1993.
+                HTML5 introduced modern multimedia features.
+            </p>
+
+            <p class="tip">
+                HTML is like the skeleton of a webpage.
+            </p>
+        </div>
+
+        <div class="card" id="structure">
+            <h2>02. Basic HTML Structure</h2>
+
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;style&gt;Add styles here&lt;/style&gt;
+    Additional meta tags can go here
+                
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+            <h3>Purpose of each tag</h3>
+
+            <p><span class="tag">&lt;!DOCTYPE html&gt;</span> Defines the HTML document type.</p>
+
+            <p><span class="tag">&lt;html&gt;</span> Contains the entire HTML document.</p>
+
+            <p><span class="tag">&lt;head&gt;</span> Contains page information and metadata.</p>
+
+            <p><span class="tag">&lt;title&gt;</span> Sets the browser tab title.</p>
+
+            <p><span class="tag">&lt;body&gt;</span> Contains visible webpage content.</p>
+        </div>
+
+        <div class="card" id="text">
+            <h2>03. Headings and Text Tags</h2>
+
+            <h3>Heading Tags: h1 to h6</h3>
+
+            <h1>Main Heading</h1>
+            <h2>Section Heading</h2>
+            <h3>Subheading</h3>
+            <h4>Heading Four</h4>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+
+            <pre>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subheading&lt;/h3&gt;
+&lt;h4&gt;Heading Four&lt;/h4&gt;
+&lt;h5&gt;Heading Five&lt;/h5&gt;
+&lt;h6&gt;Heading Six&lt;/h6&gt;</pre>
+
+            <h3>Paragraph vs Preformatted Text</h3>
+
+            <p>
+                The &lt;p&gt; tag creates a paragraph.
+                Extra spaces and line breaks usually collapse.<br>
+                The &lt;pre&gt; tag preserves spaces and line breaks exactly as written.
+
+            </p>
+
+            <pre>&lt;p&gt;Hello
+    World&lt;/p&gt;
+
+&lt;pre&gt;Hello
+    World&lt;/pre&gt;</pre>
+
+            <p>
+                <span class="tag">&lt;br&gt;</span>
+                creates a line break.
+            </p>
+
+            <pre>&lt;p&gt;First line&lt;br&gt;Second line&lt;/p&gt;</pre>
+
+            <h3>Text Formatting Tags</h3>
+
+            <p><b>&lt;b&gt;:</b> <b>Bold text</b></p>
+            <p><b>&lt;strong&gt;:</b> <strong>Important text</strong></p>
+            <p><b>&lt;i&gt;:</b> <i>Italic text</i></p>
+            <p><b>&lt;em&gt;:</b> <em>Emphasized text</em></p>
+            <p><b>&lt;u&gt;:</b> <u>Underlined text</u></p>
+            <p><b>&lt;sub&gt;:</b> H<sub>2</sub>O</p>
+            <p><b>&lt;sup&gt;:</b> X<sup>2</sup></p>
+            <p><b>&lt;s&gt;:</b> <s>Old Price</s></p>
+            <p><b>&lt;small&gt;:</b> <small>Small text</small></p>
+
+            <p class="small-note">
+                Note: &lt;big&gt; is obsolete in modern HTML.
+                Use CSS font-size to enlarge text.
+            </p>
+        </div>
+
+        <div class="card" id="attributes">
+            <h2>04. HTML Attributes</h2>
+
+            <p>
+                Attributes provide extra information about an element.
+                They are written inside the opening tag.
+            </p>
+
+            <pre>&lt;tagname attribute="value"&gt;
+    Content
+&lt;/tagname&gt;</pre>
+
+            <h3>Contenteditable Attribute</h3>
+
+            <p contenteditable="true">
+                Click here to edit this sentence!
+            </p>
+
+            <pre>&lt;p contenteditable="true"&gt;
+    Editable text
+&lt;/p&gt;
+
+&lt;p contenteditable="false"&gt;
+    Non-editable text
+&lt;/p&gt;</pre>
+
+            <p>
+                <b>true</b> allows editing.
+                <b>false</b> prevents editing through this attribute.
+            </p>
+        </div>
+
+        <div class="card" id="links">
+            <h2>05. Links, Div and Span</h2>
+
+            <h3>Anchor Tag</h3>
+
+            <p>
+                The &lt;a&gt; tag creates a hyperlink.
+                The href attribute specifies its destination.
+            </p>
+
+            <pre>&lt;a href="https://example.com"&gt;
+    Visit Example
+&lt;/a&gt;
+
+&lt;a href="https://example.com"
+   target="_blank"&gt;
+    Open in New Tab
+&lt;/a&gt;</pre>
+
+            <p>
+                <span class="tag">target="_blank"</span>
+                opens the link in a new tab.
+            </p>
+
+            <h3>Line Break</h3>
+
+            <a href="#basics">HTML Basics</a><br>
+            <a href="#text">Text Tags</a><br>
+            <a href="#media">Media Tags</a>
+
+            <h3>Div and Span</h3>
+
+            <p>
+                <span class="tag">&lt;div&gt;</span>
+                groups content as a block.
+            </p>
+
+            <p>
+                <span class="tag">&lt;span&gt;</span>
+                groups inline text.
+            </p>
+
+            <pre>&lt;div&gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;p&gt;I am learning
+        &lt;span&gt;HTML&lt;/span&gt;.
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <div class="card" id="media">
+            <h2>06. Images, Audio and Video</h2>
+
+            <h3>Image Tag</h3>
+
+            <p>
+                <span class="tag">src</span> specifies the image location.<br>
+                <span class="tag">alt</span> describes the image.<br>
+                <span class="tag">width</span> and
+                <span class="tag">height</span> set its dimensions.
+            </p>
+
+            <pre>&lt;img src="sunrise.jpg"
+            alt="Beautiful sunrise"
+            width="400"
+            height="250"&gt;</pre>
+
+            <img
+            src="https://www.learntosap.com/html23.jpg"
+            alt="about image tag">
+
+            <p>The <b>img</b> tag displays an image.</p>
+
+            <h3>Audio Tag</h3>
+
+            <pre>&lt;audio src="audio.mp3" controls&gt;
+            The controls attribute displays the audio player controls.
+            &lt;/audio&gt;</pre>
+
+            <audio controls>
+           <source src="./Media/audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+           </audio>
+
+           <p>The <b>audio</b> tag plays sound.</p>
+
+            <h3>Video Tag</h3>
+
+            <pre>&lt;video src="nature.mp4"
+            controls
+            muted
+            autoplay
+            loop
+            poster="preview.jpg"
+            width="400"&gt;
+            Your browser does not support video.
+            &lt;/video&gt;</pre>
+
+            <p>
+                <b>controls:</b> Displays play and pause controls.<br>
+                <b>muted:</b> Starts without sound.<br>
+                <b>autoplay:</b> Requests automatic playback.<br>
+                <b>loop:</b> Repeats the video.<br>
+                <b>poster:</b> Displays a preview image.
+            </p>
+
+            <p class="tip">
+                Browsers may block autoplay.
+                Muted autoplay is more likely to work.
+            </p>
+
+            <video controls width="250" height="150" muted loop autoplay
+            poster="https://i.pinimg.com/736x/74/5d/5c/745d5c85c7726e926d874a72a9000c10.jpg">
+            <source src="./Media/video.mp4" type="video/mp4">
+             Your browser does not support video.
+            </video>
+
+            <p>The <b>video</b> tag plays a video with controls.</p
+            </div>
+
+        <div class="card" id="revision">
+            <h2>07. Last-Minute Quick Revision</h2>
+
+            <div class="two">
+                <b>HTML Structure:</b><br>
+                DOCTYPE → html → head → title → body
+            </div>
+
+            <div class="two">
+                <b>Headings:</b><br>
+                h1 = Main heading; h6 = Lowest-level heading.
+            </div>
+
+            <div class="two">
+                <b>Paragraphs:</b><br>
+                p = Paragraph; pre = Preserves spaces; br = Line break.
+            </div>
+
+            <div class="two">
+                <b>Links:</b><br>
+                a = Hyperlink; href = Destination; target="_blank" = New tab.
+            </div>
+
+            <div class="two">
+                <b>Containers:</b><br>
+                div = Block container; span = Inline container.
+            </div>
+
+            <div class="two">
+                <b>Images:</b><br>
+                img = Image; src = Source; alt = Description.
+            </div>
+
+            <div class="two">
+                <b>Multimedia:</b><br>
+                audio, video, controls, muted, loop, autoplay, poster.
+            </div>
+
+            <div class="two">
+                <b>Formatting:</b><br>
+                b, strong, i, em, u, sub, sup, s, small.
+            </div>
+
+            <h3>Quick Questions</h3>
+
+            <p><b>1.</b> Which tag preserves spaces?</p>
+            <p>Answer: <span class="tag">&lt;pre&gt;</span></p>
+
+            <p><b>2.</b> Which attribute describes an image?</p>
+            <p>Answer: <span class="tag">alt</span></p>
+
+            <p><b>3.</b> Which tag creates a link?</p>
+            <p>Answer: <span class="tag">&lt;a&gt;</span></p>
+
+            <p><b>4.</b> Where does visible webpage content go?</p>
+            <p>Answer: <span class="tag">&lt;body&gt;</span></p>
+
+            <p><b>5.</b> Which attribute allows editing?</p>
+            <p>Answer: <span class="tag">contenteditable="true"</span></p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3>Keep Learning, Keep Growing!</h3>
+        <p>HTML Quick Revision | Beginner Friendly Notes</p>
+    </div>
+
+</body>
+</html>
